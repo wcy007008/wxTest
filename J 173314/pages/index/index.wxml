@@ -18,7 +18,7 @@ style="width: 88px;" mode ="widthFix"></image></navigator>
 <navigator  url='../map/map'>
 <image src="../../images/4.gif"
 style="width: 98px;" mode ="widthFix"></image></navigator>
-<navigator  url='../Login/login'>
+<navigator  url='../lixijisuanqi/lixijisuanqi'>
 <image src="../../images/6.gif"
 style="width: 103px;" mode ="widthFix"></image></navigator>
 </view>

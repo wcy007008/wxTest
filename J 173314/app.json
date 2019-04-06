@@ -8,7 +8,8 @@
     "pages/Login/login",
     "pages/Tools/tools",
     "pages/message board/lyb",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/lixijisuanqi/lixijisuanqi"
   ],
   "window": {
     "backgroundTextStyle": "light",
