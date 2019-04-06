@@ -17,3 +17,19 @@ Page({
   },
 
 })
+Component({
+  data: {
+    ItemList: [{
+      pagePath: "/pages/calc/calc",
+      text: "计算器"
+    }, {
+        pagePath: "/pages/Itcr/Itcr",
+      text: "利息计算器"
+    }
+    ],
+  },
+  attached() {
+  },
+  methods: {
+  }
+})
