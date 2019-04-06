@@ -1,6 +1,0 @@
-
-
-<view class='wd'>
-     <view class='text'>姓名：</view>
-     <view><input type="text"/></view>
-</view>

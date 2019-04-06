@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/lyb/lyb",
+    "pages/jsq/jsq"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#55e7ff",
+    "navigationBarTitleText": "计算机三班29号吴成杰",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "",
+      "iconPath": "/images/dianpu.png",
+      "selectedIconPath": "/images/dianpu_s.png"
+    },{
+      "pagePath": "pages/lyb/lyb",
+      "text": "",
+      "iconPath": "/images/biao.png",
+      "selectedIconPath": "/images/biao_s.png"
+    },
+    {
+      "pagePath": "pages/jsq/jsq",
+      "text": "",
+      "iconPath": "/images/suan.png",
+      "selectedIconPath": "/images/suan_s.png"
+    }]
+  }
+}
