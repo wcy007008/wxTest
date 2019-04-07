@@ -1,30 +1,38 @@
 // pages/pitems/pitems.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    xid:1,
-    title: "",
-    nr:"",
-    fbsj:"2019.4.4",
-    zz:"",
+    nrlist: {},
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      id: options.id,
-      xid: 1,
-      title: "这里有一篇好文章1111",
-      nr:"&nbsp;好文章是号文章就是看不到内容<br>所以选择rich-text",
-      fbsj:"2019.4.4",
-      zz:"it's me",     
-    }) 
+    this.getData(options);
+    console.log("pageno:" + options.id)
   },
-
+  getData: function (options) {
+    var that = this;
+    wx.request({
+      url: app.globalData.site + '/cmsv1/apis/getPage.ashx?pageno=' + options.id,
+      header: { 'content-type': 'applciation/json;charset=UTF-8' },
+      method: 'GET',
+      success: function (res) {
+        var str2 = res.data.substr(1, res.data.length - 2)
+        console.log(str2);
+        that.setData({
+          nrlist: JSON.parse(str2),
+        })
+      },
+      fail: function (err) {
+        console.log(err)
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

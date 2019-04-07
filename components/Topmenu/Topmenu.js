@@ -1,4 +1,3 @@
-// Topmenu/Topmenu.js
 Component({
   properties: {
     uname: { // 属性名
@@ -9,30 +8,33 @@ Component({
         // 新版本基础库不推荐使用这个字段，而是使用 Component 构造器的 observer 字段代替
         //（这样会有更强的功能和更好的性能）
       }
-    },
+    }
   },
 
   data: {
-    TopMenuList: [{
-      pagePath: "/pages/orders/orders?id=1",
-      text: "文章推荐"
-    }, {
-      pagePath: "/pages/orders/orders?id=2",
-        text: "经典代码"
-      }, {
-        pagePath: "/pages/orders/orders?id=3",
-        text: "应用案例"
-      }, {
-        pagePath: "/pages/orders/orders?id=4",
-        text: "服务购买"
-      }, {
-        pagePath: "/pages/orders/orders?id=5",
-        text: "环境配置"
-      }
-    ],
+    TopMenuList: [],
   },
+
   attached() {
+      var that = this;
+      wx.request({
+        url: 'http://localhost/cmsv1/apis/getcategory.ashx',
+        header: { 'content-type': 'applciation/json;charset=UTF-8' },
+        method: 'GET',
+        success: function (res) {
+          var str2 = res.data.substr(1, res.data.length - 2)
+          console.log(str2);
+          that.setData({
+            TopMenuList: JSON.parse(str2),
+          })
+        },
+        fail: function (err) {
+          console.log(err)
+        }
+      })
   },
+
   methods: {
-  }
+    
+  },
 })

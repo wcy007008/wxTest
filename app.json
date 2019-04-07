@@ -8,7 +8,8 @@
     "pages/lyb/lyb",
     "pages/calc/calc",
     "pages/lxjsq/lxjsq",
-    "pages/pitems/pitems"
+    "pages/pitems/pitems",
+    "pages/category/category"
   ],
   "tabBar": {
     "custom": true,

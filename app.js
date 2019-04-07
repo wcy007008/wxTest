@@ -32,5 +32,6 @@ App({
   globalData: {
     userInfo: null,
     selected: 0,
+    site:"http://localhost",
   }
 })

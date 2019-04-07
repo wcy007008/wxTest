@@ -10,7 +10,10 @@ Component({
     }, {
       pagePath: "/pages/lxjsq/lxjsq",
       text: "利息计算器"
-    }
+      }, {
+        pagePath: "/pages/category/category",
+        text: "获取CMS后台的Json数据"
+      }
     ],
   },
   attached() {
