@@ -12,6 +12,6 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "要买就买星巴克",
-    "navigationBarTextStyle": "blue",
+    "navigationBarTextStyle": "black"
   }
 }
