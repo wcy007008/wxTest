@@ -5,10 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bj: 10000,
-    lx: 10,
-    sl: 0,
-    inputValue: 0
+    bj: 10000,  //本金
+    lx: 10,     //利息    
+    sl: 1,      //借期
+    inputValue: 0,   //应还本息
+    getmonth: ""     //按月归还列表
   },
   bjInput: function (e) {
     this.setData({
@@ -26,75 +27,27 @@ Page({
     })
   },
   jslx: function (e) {
-    var value = this.data.bj;  //改变视图本金
+    var value = this.data.bj;
     var lx = this.data.lx;
     var sl = this.data.sl;
-   
+    var ghstr = "";
 
     for (var i = 0; i < sl; i++) {
-      value = value * (1 + (lx / 100))
-    }
-
-    this.setData({
-      inputValue: value.toFixed(2)
-    })
-
-   // 第一个月
-    var value1 = this.data.bj;
-    if(sl=1){
-      value1 = 11000.00;
+      value = value * (1 + (lx / 100));
+      ghstr = ghstr + "第" + (i + 1) + "月：" + value.toFixed(2) + "元\n"
+      console.log(value)
     }
     this.setData({
-      inputValue1: value1.toFixed(2)
-    })
-
-   //第二个月
-    var value2 = this.data.bj;
-    if (sl = 2) {
-      value2 = 12100.00;
-    }
-    this.setData({
-      inputValue2: value2.toFixed(2)
-    })
-
-    //第三个月
-    var value3 = this.data.bj;
-    if (sl = 3) {
-      value3 = 13310.00;
-    }
-    this.setData({
-      inputValue3: value3.toFixed(2)
-    })
-  
-    //第四个月
-    var value4 = this.data.bj;
-    if (sl = 4) {
-      value4 = 14641.00;
-    }
-    this.setData({
-      inputValue4: value4.toFixed(2)
-    })
-
-    //第五个月
-    var value5 = this.data.bj;
-    if (sl = 5) {
-      value5 =16105.10 ;
-    }
-    this.setData({
-      inputValue5: value5.toFixed(2)
-    })
-
-    //第六个月
-    var value6 = this.data.bj;
-    if (sl = 6) {
-      value6 = 17715.61;
-    }
-    this.setData({
-      inputValue6: value6.toFixed(2)
+      inputValue: value.toFixed(2),
+      getmonth: ghstr
     })
   },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
 
- 
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -130,7 +83,7 @@ Page({
   onPullDownRefresh: function () {
 
   },
-
+                          
   /**
    * 页面上拉触底事件的处理函数
    */
@@ -145,4 +98,3 @@ Page({
 
   }
 })
-
