@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="tr">
+<image src="../../images/zx.jpg" 
+style="width: 358px;" mode ="widthFix"></image>
+</view>
+
+<view class="tr">
+<navigator url='../index/index'>
+<image src="../../images/01.jpg"
+style="width: 76px;" mode ="widthFix"></image></navigator>
+<navigator  url='../lists/lists'>
+<image src="../../images/02.jpg"
+style="width: 88px;" mode ="widthFix"></image></navigator>
+<navigator  url='../lyb/lyb'>
+<image src="../../images/03.jpg"
+style="width: 98px;" mode ="widthFix"></image></navigator>
+<navigator  url='../Login/login'>
+<image src="../../images/04.jpg"
+style="width: 103px;" mode ="widthFix"></image></navigator>
+</view>
