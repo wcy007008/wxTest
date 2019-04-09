@@ -16,13 +16,11 @@
 <button  class="itemx" size="mini" bindtap='jslx'>计算</button>
 <text>应还本息：{{inputValue}}</text>
 </view>
-<view>
-<text>按月归还表</text>
+<view class="tr">
+<text>按月归还列表</text>
 </view>
-<block wx:for="{{data}}" data-item="item" wx:for-index="idx">
-<view value="{{idx}}">
-第{{idx}}月：{{item.name}}
+<view class="tr">
+<text>{{ghlist}}</text>
 </view>
-</block>
 
 <TabBar />

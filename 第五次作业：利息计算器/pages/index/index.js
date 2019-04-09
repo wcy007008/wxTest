@@ -5,21 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    data: [
-      {
-        name: '1'
-      },
-      {
-        name: '1'
-      },
-      {
-        name: '1'
-      }
-    ],
-    bj:10000,
-    lx:10,
-    sl:1,
-    inputValue:0
+    bj: 10000,
+    lx: 10,
+    sl: 1,
+    inputValue: 0,
+    ghlist: ""
   },
   bjInput: function (e) {
     this.setData({
@@ -36,21 +26,23 @@ Page({
       sl: e.detail.value
     })
   },
-
   jslx: function (e) {
     var value = this.data.bj;
     var lx = this.data.lx;
     var sl = this.data.sl;
+    var ghstr = "";
 
-    for (var i = 0; i < sl; i++){
-      value = value * (1 + (lx / 100))
+    for (var i = 0; i < sl; i++) {
+      value = value * (1 + (lx / 100));
+      ghstr = ghstr + "第" + (i + 1) + "月：" + value.toFixed(2) + "元\n"
+      console.log(value)
     }
-
     this.setData({
-      inputValue: value.toFixed(2)
+      inputValue: value.toFixed(2),
+      ghlist: ghstr
     })
   },
-  
+
   /**
    * 生命周期函数--监听页面加载
    */
