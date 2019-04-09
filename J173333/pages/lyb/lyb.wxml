@@ -14,19 +14,19 @@
 <checkbox-group name="checkbox">
       <label>
         <checkbox value="eat" />
-        学习
+        吃
       </label>
       <label>
         <checkbox value="drink" />
-       运动
+        喝
       </label>
          <label>
         <checkbox value="play" />
-        游戏
+        玩
       </label>
       <label>
         <checkbox value="happy" />
-        旅游
+        乐
       </label>
     </checkbox-group>
 </view>
@@ -46,7 +46,7 @@
   </picker>
 </view>
 <view class="alltitle">
-<rich-text>留言：<input type="text" class='border' /></rich-text>
+<rich-text>文章留言：<input type="text" class='border' /></rich-text>
 </view>
 <button>提交</button>
 
