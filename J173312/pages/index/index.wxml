@@ -1,8 +1,13 @@
 <!--index.wxml-->
 <view class="tr">
-<image src="../../images/aa.jpg" 
+<image src="../../images/555.jpg" 
 style="width: 358px;" mode ="widthFix"></image>
 </view>
+<view class="tr">
+<image src="../../images/777.jpg" 
+style="width: 358px;" mode ="widthFix"></image>
+</view>
+
 
 
 
@@ -19,7 +24,7 @@ style="width: 88px;" mode ="widthFix"></image></navigator>
 <navigator  url='../map/map'>
 <image src="../../images/home2_r5_c4.gif"
 style="width: 98px;" mode ="widthFix"></image></navigator>
-<navigator  url='../Login/login'>
+<navigator  url='../lxjsq/lxjsq'>
 <image src="../../images/home2_r5_c6.gif"
 style="width: 103px;" mode ="widthFix"></image></navigator>
 </view>
