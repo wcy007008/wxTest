@@ -1,45 +1,37 @@
-// map.js
 Page({
   data: {
-    markers: [{
-      iconPath: '/images/car.png',
-      id: 0,
-      latitude: 23.099994,
-      longitude: 113.324520,
-      width: 40,
-      height: 60
-    }],
-    polyline: [{
-      points: [{
-        longitude: 113.3245211,
-        latitude: 23.10229
-      }, {
-        longitude: 113.324520,
-        latitude: 23.21229
-      }],
-      color: '#FF0000DD',
-      width: 2,
-      dottedLine: true
-    }],
-    controls: [{
-      id: 1,
-      iconPath: '/images/car.png',
-      position: {
-        left: 0,
-        top: 300 - 50,
-        width: 50,
-        height: 50
-      },
-      clickable: true
-    }]
+    benjin: '',
+    lixi: '',
+    mon: '',
+    huan: [],
+
   },
-  regionchange(e) {
-    console.log(e.type)
+  BenjinInput: function (e) {
+    this.setData({
+      benjin: e.detail.value
+    })
   },
-  markertap(e) {
-    console.log(e.markerId)
+  LixiInput: function (e) {
+    this.setData({
+      lixi: e.detail.value
+    })
   },
-  controltap(e) {
-    console.log(e.controlId)
+  Mon: function (e) {
+    this.setData({
+      mon: e.detail.value,
+    })
+  },
+  jisuan: function (e) {
+    var benjin = this.data.benjin;
+    var lixi = this.data.lixi;
+    var mon = this.data.mon;
+    var huan = new Array();
+    for (var i = 0; i < mon; i++) {
+      benjin = (benjin * (lixi / 100)) + benjin * 1;
+      huan[i] = benjin;
+    }
+    this.setData({
+      huan:huan
+    })
   }
 })
