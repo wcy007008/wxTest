@@ -13,6 +13,9 @@ Component({
       }, {
         pagePath: "/pages/category/category",
         text: "获取CMS后台的Json数据"
+      }, {
+        pagePath: "/pages/guess/guess",
+        text: "猜数游戏"
       }
     ],
   },

@@ -9,7 +9,8 @@
     "pages/calc/calc",
     "pages/lxjsq/lxjsq",
     "pages/pitems/pitems",
-    "pages/category/category"
+    "pages/category/category",
+    "pages/guess/guess"
   ],
   "tabBar": {
     "custom": true,
