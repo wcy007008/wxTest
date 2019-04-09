@@ -1,5 +1,7 @@
 {
   "pages": [
+      "pages/guess/guess",
+    "pages/Interst calculator/Interst calculator",
     "pages/index/index",
     "pages/logs/logs",
     "pages/table/table",
@@ -8,7 +10,9 @@
     "pages/Login/login",
     "pages/Tools/tools",
     "pages/message board/message board",
+
     "pages/map/map"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
