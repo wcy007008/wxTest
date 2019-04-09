@@ -7,7 +7,9 @@
     "pages/orders/orders",
     "pages/Login/login",
     "pages/Tools/tools",
-    "pages/Message Board/message board"
+    "pages/Message Board/message board",
+    "pages/Calculator",
+    "pages/Calculator/calculator"
   ],
   "window": {
     "backgroundTextStyle": "light",
