@@ -101,4 +101,5 @@ is 属性可以使用 Mustache 语法，来动态决定具体需要渲染哪个�
 事件可以绑定在组件上，当达到触发事件，就会执行逻辑层中对应的事件处理函数。
 事件对象可以携带额外信息，如 id, dataset, touches。
 <view id="tapTest" data-hi="WeChat" bindtap="tapName">Click me!</view>
+
 <TabBar />

@@ -40,7 +40,7 @@ Page({
     this.setData({
       a: random ,
     })
-
+  
   },
 
   /**

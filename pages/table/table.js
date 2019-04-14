@@ -11,6 +11,12 @@ Page({
   },
   onLoad: function () {
     console.log('onLoad')
+    
+    //关闭本列表的红点
+    wx.hideTabBarRedDot({
+      index: 1,
+    });
+    
   }
 
 })

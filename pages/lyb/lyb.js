@@ -133,6 +133,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
     var that = this;
     wx.request({
       url: 'http://132.232.88.15/wxv2/lyb.ashx',
@@ -158,6 +159,12 @@ Page({
         }
       }
     })
+
+    //关闭本列表文本提示
+    wx.removeTabBarBadge({
+      index: 2,
+    });
+
   },
 
   /**   * 生命周期函数--监听页面初次渲染完成   */
