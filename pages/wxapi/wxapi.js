@@ -7,6 +7,13 @@ Page({
   data: {
 
   },
+getflist:function(){
+  wx.getSavedFileList({
+    success(res) {
+      console.log(res.fileList)
+    }
+  })
+},
 
 getlocation:function(){
   wx.getLocation({
