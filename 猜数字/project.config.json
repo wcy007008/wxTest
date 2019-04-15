@@ -12,9 +12,9 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
-	"appid": "wx2f27e3441b0418d1",
-	"projectname": "ECMS",
+	"libVersion": "2.6.5",
+	"appid": "wx3f3d13c3dc80868b",
+	"projectname": "%E7%8C%9C%E6%95%B0%E5%AD%97",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
